@@ -11,3 +11,8 @@ body {
 	height: inherit;
 	margin: 0;
 }
+
+.container {
+	margin: 0 auto;
+	max-width: 1280px;
+}
