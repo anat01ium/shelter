@@ -1,0 +1,30 @@
+@font-face {
+	font-family: 'Georgia';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: local('Georgia Regular'), url('../assets/fonts/georgia.woff2') format('woff');
+}
+
+@font-face {
+	font-family: 'Georgia';
+	font-style: italic;
+	font-weight: 400;
+	font-display: swap;
+	src: local('Georgia Regular Italic'), url('../assets/fonts/georgiai.woff2') format('woff');
+}
+
+:root {
+	--font-family-primary: Georgia, 'Times New Roman', Times, serif;
+	--font-family-secondary: Arial, Helvetica, sans-serif;
+}
+
+body {
+	font-family: var(--font-family-primary);
+	letter-spacing: 0.06em;
+}
+
+p {
+	font-family: var(--font-family-secondary);
+	letter-spacing: 0em;
+}
