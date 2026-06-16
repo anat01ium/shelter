@@ -15,8 +15,76 @@ body {
 	margin: 0;
 }
 
+h1, h2, h3, ul, p {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
 .container {
 	margin: 0 auto;
 	max-width: 1280px;
 	padding: 0 2.5rem;
+}
+
+#start {
+	padding-top: 1.875rem;
+	background: var(--background-start);
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	.logo__title {
+		color: var(--color-primary);
+		font-size: 2rem;
+		letter-spacing: 0.06em;
+	}
+
+	.logo__slogan {
+		margin-top: 0.7em;
+		margin-left: 0.4em;
+		color: var(--color-light-xl);
+		font-size: 0.8125rem;
+		letter-spacing: 0.1em;
+	}
+}
+
+.nav {
+	align-content: center;
+
+	.nav__list {
+		display: flex;
+		gap: 2.4em;
+	}
+
+	.nav__link {
+		position: relative;
+		display: inline-flex;
+		font-family: var(--font-family-secondary);
+		color: var(--color-dark-s);
+
+		&:hover {
+			color: var(--color-light-s);
+
+			&::after {
+				position: absolute;
+				content: "";
+				bottom: -7px;
+				width: 100%;
+				height: 3px;
+				background-color: var(--color-primary);
+			}
+		}
+	}
 }
