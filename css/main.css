@@ -31,10 +31,33 @@ a {
 .container {
 	margin: 0 auto;
 	max-width: 1280px;
-	padding: 0 2.5rem;
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
+	padding-top: 5rem;
+	padding-bottom: 6.25rem;
 }
 
 .section {
+	.section__container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.section__content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.section__title {
+		font-size: 2.1875rem;
+		line-height: 130%;
+		color: var(--color-dark-l);
+	}
+
+	.section__text {
+		line-height: 160%;
+	}
+
 	.section__link {
 		display: inline-flex;
 		border-radius: 100px;
@@ -46,44 +69,6 @@ a {
 		&:hover {
 			background-color: var(--color-primary-light);
 		}
-	}
-}
-
-#start {
-	padding-top: 1.875rem;
-	background: var(--background-start);
-
-	.section__container {
-		display: flex;
-		justify-content: space-between;
-	}
-
-	.section__content {
-		display: flex;
-		flex-direction: column;
-		align-items: baseline;
-		gap: 2.625rem;
-		padding-top: 15.8rem;
-		padding-bottom: 15.25rem;
-	}
-
-	.section__title {
-		max-width: 310px;
-		font-size: 2.75rem;
-		letter-spacing: 0em;
-		line-height: 130%;
-		color: var(--color-light-xl);
-	}
-
-	.section__text {
-		max-width: 460px;
-		line-height: 160%;
-		color: var(--color-dark-s);
-	}
-
-	.section__img {
-		align-self: end;
-		object-fit: contain;
 	}
 }
 
@@ -134,5 +119,63 @@ a {
 				background-color: var(--color-primary);
 			}
 		}
+	}
+}
+
+#start {
+	padding-top: 1.875rem;
+	background: var(--background-start);
+
+	.container {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.section__content {
+		align-items: baseline;
+		gap: 2.625rem;
+		padding-top: 15.8rem;
+		padding-bottom: 15.25rem;
+	}
+
+	.section__title {
+		max-width: 310px;
+		font-size: 2.75rem;
+		letter-spacing: 0em;
+		color: var(--color-light-xl);
+	}
+
+	.section__text {
+		max-width: 460px;
+		color: var(--color-dark-s);
+	}
+
+	.section__img {
+		align-self: end;
+		object-fit: contain;
+	}
+}
+
+#about {
+	background-color: var(--color-light-xl);
+
+	.container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		justify-self: end;
+		align-items: center;
+	}
+
+	.section__content {
+		max-width: 430px;
+		gap: 1.5625rem;
+	}
+
+	.section__title {
+		max-width: 370px;
+	}
+
+	.section__text {
+		color: var(--color-dark-xl);
 	}
 }
