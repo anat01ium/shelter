@@ -15,8 +15,8 @@
 	--footer-gradient-background: #211f20;
 
 	--background-start: url(../assets/images/noise_transparent@2x.png),
-	                     radial-gradient(circle at left, #5B483A 0%, #262425 100%);
+	                    linear-gradient(120deg, #5B483A 0%, #262425 60%);
 
 	--background-footer: url(../assets/images/noise_transparent@2x.png),
-	                      radial-gradient(circle at left, #513D2F 0%, #1A1A1C 100%);
+	                     radial-gradient(circle at left, #513D2F 0%, #1A1A1C 100%);
 }

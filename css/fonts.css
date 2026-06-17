@@ -24,8 +24,9 @@ body {
 	font-size: 0.9375rem;
 }
 
-h1, h2, h3 {
+h1, h2, h3, a {
 	font-weight: 400;
+	letter-spacing: 0.06em;
 }
 
 p {
