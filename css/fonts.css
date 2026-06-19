@@ -24,11 +24,17 @@ body {
 	font-size: 0.9375rem;
 }
 
-h1, h2, h3, a {
+h1, h2, h3, a, button {
 	font-weight: 400;
 	letter-spacing: 0.06em;
 }
 
 p {
 	font-family: var(--font-family-secondary);
+}
+
+button {
+	background: transparent;
+	font-family: inherit;
+	cursor: pointer;
 }
