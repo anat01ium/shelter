@@ -28,6 +28,10 @@ a {
 	text-decoration: none;
 }
 
+img {
+	object-fit: contain;
+}
+
 .container {
 	margin: 0 auto;
 	max-width: 1280px;
@@ -295,4 +299,46 @@ a {
 .help__title {
 	font-size: 1.25rem;
 	color: var(--color-dark-l);
+}
+
+#donation {
+	background: var(--color-light-l);
+
+	.container {
+		display: flex;
+		justify-content: center;
+		gap: 1.92rem;
+	}
+
+	.section__content {
+		max-width: 380px;
+		align-items: baseline;
+		gap: 1.25rem;
+
+		.section__subtitle {
+			font-family: var(--font-family-primary);
+			line-height: 110%;
+			letter-spacing: 0.06em;
+			color: var(--color-dark-l);
+		}
+
+		.section__description {
+			font-style: italic;
+			font-size: 0.75rem;
+			line-height: 150%;
+			color: var(--color-dark-m);
+		}
+	}
+}
+
+.bank-card {
+	display: flex;
+	border-radius: 9px;
+	padding: 0.5em 0.75em;
+	background: var(--color-primary);
+	font-size: 1.25rem;
+	line-height: 115%;
+	letter-spacing: 0.06em;
+	color: var(--color-dark-l);
+	gap: 0.75em;
 }
