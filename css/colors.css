@@ -18,5 +18,5 @@
 	                    linear-gradient(120deg, #5B483A 0%, #262425 60%);
 
 	--background-footer: url(../assets/images/noise_transparent@2x.png),
-	                     radial-gradient(circle at left, #513D2F 0%, #1A1A1C 100%);
+	                     linear-gradient(120deg, #5B483A 0%, #1c1c1c 75%);
 }

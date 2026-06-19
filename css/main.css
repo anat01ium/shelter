@@ -342,3 +342,56 @@ img {
 	color: var(--color-dark-l);
 	gap: 0.75em;
 }
+
+.footer {
+	background: var(--background-footer);
+
+	.container {
+		padding-top: 0;
+		padding-bottom: 0;
+		display: grid;
+		grid-template-columns: repeat(3, 300px);
+		justify-content: space-between;
+	}
+
+	.section__title {
+		color: var(--color-light-xl);
+	}
+
+	.footer__column {
+		display: grid;
+		gap: 2rem;
+		padding: 3.5rem 0;
+	}
+
+	.footer__img {
+		justify-self: end;
+		align-self: end;
+	}
+
+	.contacts__list {
+		display: grid;
+		gap: 2.2rem;
+	}
+
+	.contacts__item {
+		display: flex;
+		align-items: center;
+		gap: 1.2rem;
+	}
+
+	.contacts__icon {
+		object-fit: none;
+	}
+
+	.contacts__link {
+		font-size: 1.25rem;
+		line-height: 115%;
+		color: var(--color-primary);
+
+		&:hover {
+			color: var(--color-primary-light);
+			text-decoration: underline;
+		}
+	}
+}
