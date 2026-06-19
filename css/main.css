@@ -264,3 +264,35 @@ a {
 		box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.04);
 	}
 }
+
+#help {
+	background: var(--color-light-xl);
+
+	.container {
+		display: grid;
+		gap: 3.75rem;
+	}
+
+	.section__title {
+		text-align: center;
+	}
+}
+
+.help__list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 3.5rem 0;
+}
+
+.help__item {
+	display: grid;
+	padding: 0 3.74rem;
+	justify-items: center;
+	gap: 1.875rem;
+}
+
+.help__title {
+	font-size: 1.25rem;
+	color: var(--color-dark-l);
+}
