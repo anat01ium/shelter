@@ -12,6 +12,12 @@
 	.logo__slogan {
 		color: var(--color-dark-3xl);
 	}
+
+	&:hover {
+		.logo__title {
+			color: var(--color-dark-3xl);
+		}
+	}
 }
 
 .nav {
