@@ -132,6 +132,7 @@ img {
 	.nav__link--active {
 		position: relative;
 		color: var(--color-light-s);
+		pointer-events: none;
 
 		&::after {
 			position: absolute;

@@ -1,1 +1,29 @@
 @import url("main.css");
+
+.header {
+	background: var(--color-light-xl);
+}
+
+.logo {
+	.logo__title {
+		color: var(--color-dark-l);
+	}
+
+	.logo__slogan {
+		color: var(--color-dark-3xl);
+	}
+}
+
+.nav {
+	.nav__link {
+		color: var(--color-dark-l);
+
+		&:hover {
+			color: var(--color-dark-3xl);
+		}
+	}
+
+	.nav__link--active {
+		color: var(--color-dark-3xl);
+	}
+}
