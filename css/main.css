@@ -63,7 +63,6 @@ img {
 	.section__text {
 		line-height: 160%;
 	}
-
 }
 
 .button {
@@ -80,10 +79,49 @@ img {
 		border-color: var(--color-primary-light);
 		background-color: var(--color-primary-light);
 	}
+
+	&:disabled {
+		pointer-events: none;
+		color: var(--color-dark-s);
+		filter: grayscale(1);
+	}
 }
 
 .button--alt {
 	background: transparent;
+}
+
+.button--nav {
+	display: grid;
+	place-content: center;
+	width: 3.25rem;
+	aspect-ratio: 1;
+	padding: 0;
+	pointer-events: initial;
+
+	.button__text {
+		font-size: 0;
+		letter-spacing: 0;
+	}
+}
+
+.button--next,
+.button--end {
+	.button__icon {
+		transform: scaleX(-1);
+	}
+}
+
+.button--number {
+	.button__text {
+		font-size: inherit;
+		letter-spacing: inherit;
+	}
+
+	.active& {
+		background-color: var(--color-primary);
+		pointer-events: none;
+	}
 }
 
 .header {
@@ -197,7 +235,7 @@ img {
 	}
 }
 
-#pets {
+.pets {
 	background: var(--color-light-l);
 
 	.container {
@@ -230,22 +268,6 @@ img {
 		transform: translateY(-50%);
 		pointer-events: none;
 	}
-
-	.slider__button {
-		padding: 1em;
-		pointer-events: initial;
-
-		.button__text {
-			font-size: 0;
-			letter-spacing: 0;
-		}
-	}
-
-	.slider__button--next {
-		.button__icon {
-			transform: scaleX(-1);
-		}
-	}
 }
 
 .card {
@@ -258,6 +280,12 @@ img {
 	background: var(--color-light-s);
 	overflow: hidden;
 	cursor: pointer;
+
+	.card__img {
+		width: 270px;
+		aspect-ratio: 1;
+		object-fit: cover;
+	}
 
 	.card__title {
 		font-size: 1.25rem;

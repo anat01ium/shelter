@@ -27,3 +27,21 @@
 		color: var(--color-dark-3xl);
 	}
 }
+
+.gallery {
+	display: grid;
+	gap: 3.8rem;
+
+	.gallery__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 1.875rem 2.5rem;
+	}
+
+	.gallery__nav {
+		display: flex;
+		justify-content: center;
+		gap: 1.25rem;
+	}
+}
