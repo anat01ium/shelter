@@ -4,6 +4,7 @@
 html {
 	box-sizing: border-box;
 	height: 100%;
+	scroll-behavior: smooth;
 }
 
 *, ::after, ::before {
@@ -26,6 +27,11 @@ ul {
 
 a {
 	text-decoration: none;
+	transition: 250ms;
+}
+
+button {
+	transition: 250ms;
 }
 
 img {
@@ -137,6 +143,7 @@ img {
 	.logo__title {
 		color: var(--color-primary);
 		font-size: 2rem;
+		transition: 250ms;
 	}
 
 	.logo__slogan {
@@ -286,6 +293,7 @@ img {
 	background: var(--color-light-s);
 	overflow: hidden;
 	cursor: pointer;
+	transition: 250ms;
 
 	.card__img {
 		width: 270px;
@@ -413,24 +421,23 @@ img {
 		gap: 2.2rem;
 	}
 
-	.contacts__item {
-		display: flex;
-		align-items: center;
-		gap: 1.2rem;
-	}
-
 	.contacts__icon {
 		object-fit: none;
 	}
 
 	.contacts__link {
+		display: inline-flex;
+		align-items: center;
+		gap: 1.2rem;
 		font-size: 1.25rem;
 		line-height: 115%;
 		color: var(--color-primary);
+		text-decoration: underline;
+		text-decoration-color: transparent;
 
 		&:hover {
 			color: var(--color-primary-light);
-			text-decoration: underline;
+			text-decoration-color: currentColor;
 		}
 	}
 }
