@@ -11,12 +11,9 @@
 	--color-primary: #f1cdb3;
 	--color-primary-light: #fddcc4;
 
-	--start-screen-gradient-background: #211f20;
-	--footer-gradient-background: #211f20;
-
 	--background-start: url(../assets/images/noise_transparent@2x.png),
 	                    linear-gradient(120deg, #5B483A 0%, #262425 60%);
 
 	--background-footer: url(../assets/images/noise_transparent@2x.png),
-	                     linear-gradient(120deg, #5B483A 0%, #1c1c1c 75%);
+	                     linear-gradient(120deg, #5B483A 0%, #1c1c1c 70%);
 }

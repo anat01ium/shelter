@@ -45,6 +45,8 @@ img {
 	.section__container {
 		display: flex;
 		justify-content: space-between;
+		padding-top: 0;
+		padding-bottom: 0;
 	}
 
 	.section__content {
@@ -85,8 +87,12 @@ img {
 }
 
 .header {
-	display: flex;
-	justify-content: space-between;
+	.header__container {
+		display: flex;
+		justify-content: space-between;
+		padding-top: 1.875rem;
+		padding-bottom: 1.875rem;
+	}
 }
 
 .logo {
@@ -139,19 +145,13 @@ img {
 }
 
 #start {
-	padding-top: 1.875rem;
 	background: var(--background-start);
-
-	.container {
-		padding-top: 0;
-		padding-bottom: 0;
-	}
 
 	.section__content {
 		align-items: baseline;
-		gap: 2.625rem;
-		padding-top: 15.8rem;
-		padding-bottom: 15.25rem;
+		gap: 2.6rem;
+		padding-top: 14rem;
+		padding-bottom: 15.15rem;
 	}
 
 	.section__title {
@@ -184,7 +184,7 @@ img {
 
 	.section__content {
 		max-width: 430px;
-		gap: 1.5625rem;
+		gap: 1.5rem;
 	}
 
 	.section__title {
@@ -203,7 +203,7 @@ img {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		gap: 3.7rem;
+		gap: 3.75rem;
 	}
 
 	.section__title {
