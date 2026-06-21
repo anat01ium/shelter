@@ -1,0 +1,53 @@
+@import url("main.css");
+
+.header {
+	background: var(--color-light-xl);
+}
+
+.logo {
+	.logo__title {
+		color: var(--color-dark-l);
+	}
+
+	.logo__slogan {
+		color: var(--color-dark-3xl);
+	}
+
+	&:hover {
+		.logo__title {
+			color: var(--color-dark-3xl);
+		}
+	}
+}
+
+.nav {
+	.nav__link {
+		color: var(--color-dark-l);
+
+		&:hover {
+			color: var(--color-dark-3xl);
+		}
+	}
+
+	.nav__link--active {
+		color: var(--color-dark-3xl);
+	}
+}
+
+.gallery {
+	display: grid;
+	gap: 3.8rem;
+
+	.gallery__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 1.875rem 2.5rem;
+	}
+
+	.gallery__nav {
+		display: flex;
+		justify-content: center;
+		gap: 1.25rem;
+	}
+}
