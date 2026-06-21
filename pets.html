@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Cozy Hose &bull; Pets page</title>
+
+	<link rel="icon" href="assets/icons/dog-face.svg" type="image/svg+xml">
+	<link rel="stylesheet" href="css/pets.css">
+
+	<script defer src="js/score.js"></script>
+</head>
+
+<body>
+	<header class="header">
+		<div class="container header__container">
+			<a class="logo" href="index.html">
+				<h1 class="logo__title">Cozy House</h1>
+				<p class="logo__slogan">Shelter for pets in Boston</p>
+			</a>
+
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__item"><a class="nav__link" href="index.html">About the shelter</a></li>
+					<li class="nav__item"><a class="nav__link nav__link--active" href="pets.html">Our pets</a></li>
+					<li class="nav__item"><a class="nav__link" href="index.html#help">Help the shelter</a></li>
+					<li class="nav__item"><a class="nav__link" href="#contacts">Contacts</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section class="section pets">
+		<div class="container">
+			<h2 class="section__title">Our friends who<br/>are looking for a house</h2>
+
+			<div class="gallery">
+				<ul class="gallery__list">
+					<li class="card">
+						<img class="card__img" src="assets/images/pet-katrine.jpg" alt="Cat Katrine">
+						<h3 class="card__title">Katrine</h3>
+						<button class="button button--alt">Learn more</button>
+					</li>
+
+					<li class="card">
+						<img class="card__img" src="assets/images/pet-jennifer.jpg" alt="Dog Jennifer">
+						<h3 class="card__title">Jennifer</h3>
+						<button class="button button--alt">Learn more</button>
+					</li>
+
+					<li class="card">
+						<img class="card__img" src="assets/images/pet-woody.jpg" alt="Dog Woody">
+						<h3 class="card__title">Woody</h3>
+						<button class="button button--alt">Learn more</button>
+					</li>
+
+					<li class="card">
+						<img class="card__img" src="assets/images/pet-sophia.jpg" alt="Dog Sophia">
+						<h3 class="card__title">Sophia</h3>
+						<button class="button button--alt">Learn more</button>
+					</li>
+
+					<li class="card">
+						<img class="card__img" src="assets/images/pet-timmy.jpg" alt="Cat Timmy">
+						<h3 class="card__title">Timmy</h3>
+						<button class="button button--alt">Learn more</button>
+					</li>
+
+					<li class="card">
+						<img class="card__img" src="assets/images/pet-charly.jpg" alt="Dog Charly">
+						<h3 class="card__title">Charly</h3>
+						<button class="button button--alt">Learn more</button>
+					</li>
+
+					<li class="card">
+						<img class="card__img" src="assets/images/pet-scarlett.jpg" alt="Dog Scarlett">
+						<h3 class="card__title">Scarlett</h3>
+						<button class="button button--alt">Learn more</button>
+					</li>
+
+					<li class="card">
+						<img class="card__img" src="assets/images/pet-freddie.jpg" alt="Cat Freddie">
+						<h3 class="card__title">Freddie</h3>
+						<button class="button button--alt">Learn more</button>
+					</li>
+				</ul>
+				
+				<div class="gallery__nav">
+					<button class="button button--alt button--nav button--start" disabled>
+						<span class="button__icon">&lt;&lt;</span>
+						<span class="button__text">Start</span>
+					</button>
+
+					<button class="button button--alt button--nav button--prev" disabled>
+						<span class="button__icon">&lt;</span>
+						<span class="button__text">Previous</span>
+					</button>
+
+					<button class="button button--alt button--nav button--number active">
+						<span class="button__text">1</span>
+					</button>
+
+					<button class="button button--alt button--nav button--next">
+						<span class="button__icon">&lt;</span>
+						<span class="button__text">Next</span>
+					</button>
+
+					<button class="button button--alt button--nav button--end">
+						<span class="button__icon">&lt;&lt;</span>
+						<span class="button__text">End</span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer section" id="contacts">
+		<div class="container">
+			<div class="footer__column">
+				<h2 class="section__title">For questions and suggestions</h2>
+
+				<ul class="contacts__list">
+					<li class="contacts__item">
+						<a class="contacts__link" href="mailto:email@shelter.com">
+							<img class="contacts__icon" src="assets/icons/icon-email.svg" alt="Envelope">
+							<span class="contacts__text">email@shelter.com</span>
+						</a>
+					</li>
+
+					<li class="contacts__item">
+						<a class="contacts__link" href="tel:+136745677554">
+							<img class="contacts__icon" src="assets/icons/icon-phone.svg" alt="Phone">
+							<span class="contacts__text">+13 674 567 75 54</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="footer__column">
+				<h2 class="section__title">We are waiting for your visit</h2>
+
+				<ul class="contacts__list">
+					<li class="contacts__item">
+						<a class="contacts__link" href="https://maps.app.goo.gl/amMdFjsu1oYTs95K6" target="_blank">
+							<img class="contacts__icon" src="assets/icons/icon-marker.png" alt="Marker">
+							<span class="contacts__text">1 Central Street, Boston (entrance from the store)</span>
+						</a>
+					</li>
+
+					<li class="contacts__item">
+						<a class="contacts__link" href="https://maps.app.goo.gl/QRbNiAE42L1qrXa69" target="_blank">
+							<img class="contact__icon" src="assets/icons/icon-marker.png" alt="Marker">
+							<span class="contacts__text">18 South Park, London</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			
+			<img class="footer__img" src="assets/images/footer-puppy.png" alt="Puppy">
+		</div>
+	</footer>
+</body>
+
+</html>
